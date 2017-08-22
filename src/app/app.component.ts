@@ -20,12 +20,13 @@ export class AppComponent {
           this.people = data;
         },
         (err: HttpErrorResponse) => {
-          if (err instanceof Error) {
-            // client-side error
-            this.message = `An error occured ${err.error.message}`;
-          } else {
-            this.message = `Backend returned error code ${err.status}, body was: ${err.message}`;
-          }
+          console.log('error response in component', err);
+          // if (err instanceof Error) {
+          //   // client-side error
+          //   this.message = `An error occured ${err.error.message}`;
+          // } else {
+          //   this.message = `Backend returned error code ${err.status}, body was: ${err.message}`;
+          // }
         }
       );
   }
