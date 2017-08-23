@@ -10,9 +10,5 @@
 <hr />
 
 <ul>
-    <li *ngFor="let person of people">{{ person.name }}</li>
+    <li *ngFor="let person of people$ | async">{{ person.name }}</li>
 </ul>
-
-<p *ngIf="message">
-  <strong>Error: </strong> {{ message }}
-</p>
