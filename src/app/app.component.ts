@@ -7,10 +7,10 @@ import { HttpErrorResponse } from '@angular/common/http';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  people$;
+  output$;
   constructor(private peopleService: PeopleService) {}
 
   fetchPeople() {
-    this.people$ = this.peopleService.fetchPeople();
+    this.output$ = this.peopleService.fetchPeople();
   }
 }

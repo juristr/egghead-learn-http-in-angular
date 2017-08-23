@@ -9,6 +9,6 @@
 
 <hr />
 
-<ul>
-    <li *ngFor="let person of people$ | async">{{ person.name }}</li>
-</ul>
+<pre>
+{{ output$ | async | json }}
+</pre>
