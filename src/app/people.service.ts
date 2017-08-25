@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 export interface Person {
   name: string;
@@ -11,9 +11,9 @@ export class PeopleService {
 
   constructor(private http: HttpClient) {}
 
-  fetchPeople(): Observable<HttpResponse<Person>> {
+  fetchPeople(): Observable<Person[]> {
     return this.http
-      .get<Person>('/api/v1/people', { observe: 'response'});
+      .get<Person[]>('/api/v1/people');
   }
 
 }
