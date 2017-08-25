@@ -11,9 +11,9 @@ export class PeopleService {
 
   constructor(private http: HttpClient) {}
 
-  fetchPeople(): Observable<Person> {
+  fetchPeople(): Observable<Person[]> {
     return this.http
-      .get<Person>('/assets/data/people.json');
+      .get<Person[]>('/assets/data/people.json');
   }
 
 }
