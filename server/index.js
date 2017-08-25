@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/api/v1/people', function (req, res) {
+  res.set('my-custom-header', 'Angular rocks');
   res.json([
     {
       name: 'Juri'

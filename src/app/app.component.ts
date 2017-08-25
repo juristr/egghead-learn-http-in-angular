@@ -14,6 +14,7 @@ export class AppComponent {
     this.peopleService
       .fetchPeople()
       .subscribe(data => {
+        console.log(data.headers.get('my-custom-header'));
         this.output = data;
       });
   }
