@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpRequest, HttpEvent } from '@angular/common/http';
 
 export interface Person {
   name: string;
@@ -11,9 +11,15 @@ export class PeopleService {
 
   constructor(private http: HttpClient) {}
 
-  fetchPeople(): Observable<HttpResponse<Person>> {
-    return this.http
-      .get<Person>('/api/v1/people', { observe: 'response'});
+  uploadAvatar(data): Observable<HttpEvent<Object>> {
+    const req = new HttpRequest(
+      'POST',
+      '/api/v1/people/123/avatar',
+      data,
+      { reportProgress: true }
+    );
+
+    return this.http.request(req);
   }
 
 }

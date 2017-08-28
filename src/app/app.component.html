@@ -1,14 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Fetch data from some API
+    Listen to progress event
   </h1>
 </div>
 
-<button (click)="fetchPeople()">Fetch people</button>
+<input type="file" #fileUpload>
+<button (click)="uploadAvatar(fileUpload)">Upload</button>
 
 <hr />
 
-<pre>
-{{ output | json }}
-</pre>
+<p *ngIf="output">
+  {{ output }}
+</p>
