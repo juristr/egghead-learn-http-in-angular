@@ -1,28 +1,19 @@
-# LearnHttpInAngular
+# Egghead Course: Learn Http in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+[by Juri Strumpflohner](https://twitter.com/juristr)
 
-## Development server
+This repository is organized in different branches, one branch for each video lesson.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Contents
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. [Fetch data from an API using the HttpClient in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/fetch-data-from-api)
+1. [Send data via Http using Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/send-data-to-server)
+1. [Handle HTTP error responses in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/handle-http-error-responses)
+1. [Retry failed requests with the HttpClient in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/retry-failed-requests)
+1. [Set HTTP headers in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/set-header-in-request)
+1. [Read custom HTTP headers sent by the server in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/read-custom-headers)
+1. [Fetch non-JSON data using the HttpClient in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/request-non-json-data)
+1. [Apply type checking to an Http response using the Angular HttpClient](https://github.com/juristr/egghead-learn-http-in-angular/tree/apply-type-checking)
+1. [Intercept HTTP requests in Angular](https://github.com/juristr/egghead-learn-http-in-angular/tree/intercept-http-in-angular)
+1. [Listen to progress events using the Angular HttpClient](https://github.com/juristr/egghead-learn-http-in-angular/tree/listen-progress-events)
+1. Mock HTTP Requests made with Angular’s HttpClient in Unit Tests
