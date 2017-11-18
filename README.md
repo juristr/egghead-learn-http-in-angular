@@ -2,6 +2,8 @@
 
 [by Juri Strumpflohner](https://twitter.com/juristr)
 
+<a href="https://egghead.io/courses/learn-http-in-angular"><img src="./http-artwork.png" style="max-width:300px" /></a>
+
 This repository is organized in different branches, one branch for each video lesson.
 
 ## Contents
